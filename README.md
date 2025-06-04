@@ -18,3 +18,30 @@ pip install -r requirements.txt
 For questions or feedback, please contact:
 - Maliheh Heidarpour-Shahrezaei
 - Email: maliheh.heidarpour@dkit.ie
+
+
+ ##  Hyperparameters 
+Key hyperparameters used in the experiments include:
+
+- **SMOTE neighbors**: Typically set to `5` (default), but adjustable depending on the sampling technique.
+- **Classifier parameters**: Logistic Regression using default settings from `scikit-learn` unless otherwise noted.
+- Other technique-specific parameters are documented in the code comments.
+
+---
+
+## Data
+
+Datasets used in this project include publicly available benchmarks such as the **Adult Income** dataset.
+
+> **Note:** Due to privacy and licensing constraints, datasets are **not** included in this repository.
+
+To use the datasets:
+- Download them from their original sources (e.g., UCI repository).
+- Preprocess them using the provided `data_preprocessing.py` script.
+
+---
+
+## License
+
+This repository is licensed under the **MIT License**.
+For details, see the [LICENSE](./LICENSE) file.
