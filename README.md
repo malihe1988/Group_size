@@ -21,11 +21,38 @@ For questions or feedback, please contact:
 
 
  ##  Hyperparameters 
-Key hyperparameters used in the experiments include:
+This work utilises Fair-SMOTE, a fairness-aware oversampling method developed by Chakraborty et al., for synthetic data generation. Fair-SMOTE preserves inter-feature associations and applies type-specific extrapolation logic to Boolean, categorical, and numeric features.
 
-- **SMOTE neighbors**: Typically set to `5` (default), but adjustable depending on the sampling technique.
-- **Classifier parameters**: Logistic Regression using default settings from `scikit-learn` unless otherwise noted.
-- Other technique-specific parameters are documented in the code comments.
+Key hyperparameters and settings used:
+
+- `k` (number of neighbours): **3**  
+  Used to identify nearest neighbours during SMOTE interpolation.
+
+- `f` (mutation amount): **0.8**  
+  Controls how far synthetic samples are placed between parents.
+
+- `cr` (crossover frequency): **0.8**  
+  Determinesthe  frequency of crossover between features for interpolation.
+
+- **Parent Selection Strategies:**
+  - `US_SM`: Uniform Sampling from underrepresented groups based on demographic parity.
+  - `PS_SM`: Preferential Sampling near the classifier's decision boundary.
+  - `WPS_SM`: Weighted Preferential Sampling, with weights based on distance from the decision boundary.
+  - UP-prefixed versions (e.g., `UP_US_SM`): Apply each strategy to only the underprivileged (UP) group.
+  - B-prefixed versions (e.g., `B_WPS_SM`): Balance all groups to the size of the largest group.
+
+- **Classifiers Used:**
+  - Logistic Regression
+  - Decision Tree
+  - Random Forest
+  - Gradient Boosting
+  - Support Vector Machine (SVM)  
+  All with default settings from `sklearn` unless otherwise noted.
+
+- **Reproducibility:**
+  - All experiments were repeated across **50 random seeds** for statistical robustness.
+
+Please refer to code comments in the respective sampling strategy folders for further fine-grained hyperparameter settings and implementation logic.
 
 - ## Acknowledgements
 
