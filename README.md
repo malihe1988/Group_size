@@ -72,14 +72,6 @@ We thank the original authors for sharing their code, which was instrumental in 
 
 Datasets used in this project include publicly available benchmarks such as the **Adult Income** dataset.
 
-> **Note:** Due to privacy and licensing constraints, datasets are **not** included in this repository.
-
-To use the datasets:
-- Download them from their original sources (e.g., UCI repository).
-- Preprocess them using the provided `data_preprocessing.py` script.
-
----
-
 ## License
 
 This repository is licensed under the **MIT License**.
