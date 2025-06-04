@@ -15,29 +15,7 @@ You can install dependencies by running:
 ```bash
 pip install -r requirements.txt
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-##Installation Instructions
-###1. Python Version:
-This project is developed and tested with Python 3.8+.
 
-###2.Dependencies:
-Install required packages using pip: 
-pip install -r requirements.txt
-
-The requirements.txt includes:
-*numpy
-*pandas
-*scikit-learn
-*imbalanced-learn
-*matplotlib
-*seaborn
-*scipy
-
-##Data
-The code uses publicly available datasets such as Adult Income, COMPAS, and others referenced in the paper.
-Due to data privacy and licensing, raw datasets are not included in this repository.
-Please download datasets from official sources or open repositories (links provided in the paper) and place them in the data/ folder.
-Preprocessing scripts are provided to clean and prepare data before experiments.
 
 ##Contact
 For questions or feedback, please contact:
