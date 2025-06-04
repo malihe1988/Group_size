@@ -11,13 +11,10 @@ To set up the environment, please ensure you have:
 - Python 3.8 or higher
 - Required Python packages listed in `requirements.txt`
 
-You can install dependencies by running:
-```bash
+### You can install dependencies by running:
 pip install -r requirements.txt
 
-
-
-##Contact
+### Contact:
 For questions or feedback, please contact:
-Maliheh Heidarpour-Shahrezaei
-Email: maliheh.heidarpour@dkit.ie
+- Maliheh Heidarpour-Shahrezaei
+- Email: maliheh.heidarpour@dkit.ie
