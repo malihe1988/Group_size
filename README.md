@@ -27,6 +27,18 @@ Key hyperparameters used in the experiments include:
 - **Classifier parameters**: Logistic Regression using default settings from `scikit-learn` unless otherwise noted.
 - Other technique-specific parameters are documented in the code comments.
 
+- ## Acknowledgements
+
+Parts of the sample generation and balanced group size logic are adapted from:
+
+- [Fair-SMOTE by Joymallya Chakraborty](https://github.com/joymallyac/Fair-SMOTE/tree/master)
+
+The underprivileged group size handling (UP group size) is inspired by:
+
+- [FAWOS by Teresa Lazar](https://github.com/teresalazar13/FAWOS/tree/master)
+
+We thank the original authors for sharing their code, which was instrumental in supporting our experiments and extending the fairness-aware sampling framework.
+
 ---
 
 ## Data
