@@ -1,8 +1,21 @@
-#Group_size: Code for Mitigating Algorithmic Bias through Sampling
-##Project Overview
-This repository contains the implementation of bias mitigation techniques described in the paper "Mitigating Algorithmic Bias through Sampling: The Role of Group Size and Sample Selection", accepted at BIAS 2025 workshop (SIGIR 2025).
-The code implements various SMOTE-based preprocessing methods to mitigate algorithmic bias in classification tasks by adjusting group sizes and sample selection strategies. It includes experiments with Logistic Regression classifiers on multiple datasets, focusing on fairness metrics such as Demographic Parity and Equalized Odds.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Group_size: Code for Mitigating Algorithmic Bias through Sampling
+
+## Project Overview
+This repository contains the implementation code supporting the paper titled  
+**"Mitigating Algorithmic Bias through Sampling: The Role of Group Size and Sample Selection"**  
+presented at BIAS 2025 workshop at SIGIR 2025. The code includes various SMOTE-based sampling techniques to mitigate algorithmic bias related to protected attributes, focusing on group size adjustments and sample selection strategies.
+
+## Installation Instructions
+To set up the environment, please ensure you have:
+
+- Python 3.8 or higher
+- Required Python packages listed in `requirements.txt`
+
+You can install dependencies by running:
+```bash
+pip install -r requirements.txt
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ##Installation Instructions
 ###1. Python Version:
 This project is developed and tested with Python 3.8+.
